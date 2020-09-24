@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <title>Освещение дисплеем 1.00000003</title>
+ <head>
+  <meta charset="utf-8">
+ </head>
+ <!--Проект "Освещение дисплеем"-->
+ <!--autor "Andrey M."-->
+ <!--productid "23559895-26531821-40850450-23151948-29967406-22388936-10170481-24376529-27657420-22250324"-->
+ <body BgColor="#FFFFFF">
+ </header>
+
+ <script type="text/javascript"> // Жабаскрипт - начало
+
+  // тык по окну приложения
+  window.onclick = function() {
+   anus_nahren ();
+  };
+
+  // кнопкодавление  Esc
+  window.onkeydown = function( event ) {
+   if ( event.keyCode == 27 ) {
+    anus_nahren ();
+   }
+  };
+
+  // закрытие программы
+  function anus_nahren () {
+   window.close();
+  };
+
+  // кнопкодавление Enter
+  window.onkeydown = function( event ) {
+   if ( event.keyCode == 13 ) {
+      ActivateFullscreen();
+   }
+  };
+
+var el = document.documentElement;
+//Запустить отображение в полноэкранном режиме (для кривых браузеров)
+function ActivateFullscreen() {
+  if (el.requestFullscreen) {
+    el.requestFullscreen();
+  } else if (el.mozRequestFullScreen) { /* Firefox */
+    el.mozRequestFullScreen();
+  } else if (el.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    el.webkitRequestFullscreen();
+  } else if (el.msRequestFullscreen) { /* IE/Edge */
+    el.msRequestFullscreen();
+  }
+}
+
+  // Жабаскрипт - конец
+ </script>
+</html>
+
+<!--Вроде всё.
